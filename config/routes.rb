@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   get "/contact" => "static_pages#contact"
   get "/about" => "static_pages#about"
   get "/help" => "static_pages#help"
+  resources :users
 end
