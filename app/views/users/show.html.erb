@@ -1,0 +1,15 @@
+<% if @user %>
+<% provide(:title, @user.name) %>
+<aside>
+<section>
+<h1>
+<%= gravatar_for @user %>
+<%= @user.name %></h1>
+ 
+<% else %>
+<div class="error">
+<p> No user here Feel free to create one or go to a different user </p>
+</div>
+</section>
+</aside>
+<%end%>
